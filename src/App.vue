@@ -13,5 +13,6 @@ body {
   align-items: center;
   justify-content: center;
   font-family: 'Poppins', sans-serif;
+  background-color: #ffff;
 }
 </style>

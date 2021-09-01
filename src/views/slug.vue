@@ -18,9 +18,9 @@ export default {
   },
   computed: {
     article() {
-      console.log(this.$route.params.id);
+      return console.log(this.$route.params.id);
       // eslint-disable-next-line radix
-      return this.$store.getters.theme(parseInt(this.$route.params.id));
+      // return this.$store.getters.theme(parseInt(this.$route.params.id));
     },
   },
 };

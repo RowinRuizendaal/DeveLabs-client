@@ -7,7 +7,7 @@
         <img :src="item.image">
       </div>
       <div class="logo">
-        <h4>{{ item.author }}</h4>
+        <h2>{{ brandName }}</h2>
       </div>
       <div class="intro">
         <p>{{ item.content }}</p>
@@ -28,6 +28,8 @@ export default {
   data() {
     return {
       blogs: null,
+      brandName: 'DeveLabs',
+      image: 'https://source.unsplash.com/random/376x43',
     };
   },
   methods: {
@@ -35,11 +37,9 @@ export default {
       axios
         .get('https://develabs.herokuapp.com/api/blogs')
         .then((res) => {
-          console.log(res.data.getBlogs);
           this.blogs = res.data.getBlogs;
         })
         .catch((err) => {
-          // this.error = err;
           console.log(err);
         });
     },
@@ -55,11 +55,13 @@ export default {
   place-items: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 1rem;
+  padding: 5rem;
 }
 
 .card {
   position: relative;
+  box-shadow: 0 0 18px #ccc;
 }
 
 .card .background img {
