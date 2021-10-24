@@ -35,7 +35,7 @@ export default {
   methods: {
     Fetch() {
       axios
-        .get('https://develabs.herokuapp.com/api/blogs')
+        .get('https://develabs.herokuapp.com/api/public/blogs')
         .then((res) => {
           this.blogs = res.data.getBlogs;
         })
