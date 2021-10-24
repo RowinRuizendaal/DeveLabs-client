@@ -1,5 +1,7 @@
 # develabs-client
 
+A quick setup for testing back-end API
+
 ## Project setup
 ```
 yarn install
