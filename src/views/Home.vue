@@ -10,7 +10,7 @@
         <h2>{{ brandName }}</h2>
       </div>
       <div class="intro">
-        <p>{{ item.content }}</p>
+        <p>{{ item.title }}</p>
       </div>
     </div>
   </router-link>
