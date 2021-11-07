@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
-import blogSlug from '../views/slug.vue';
+import blogSlug from '../views/_slug.vue';
 
 Vue.use(VueRouter);
 
@@ -12,7 +12,7 @@ const routes = [
     component: Home,
   },
   {
-    path: '/blog/:id',
+    path: '/blog/:id/:title',
     component: blogSlug,
     name: 'blog',
   },
